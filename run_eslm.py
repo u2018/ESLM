@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Feb 23 10:25:40 2022
 
-@author: asep
-"""
 import os
 import argparse
 import time
@@ -402,31 +398,7 @@ def evaluation(dataset, k):
         all_map_scores.append(map_score)
         
     print("{}@top{}: F-Measure={}, NDCG={}, MAP={}".format(dataset, k, np.average(all_fscore), np.average(all_ndcg_scores), np.average(all_map_scores)))
-def cls_cosine_distance(embeds):
-    CLSs = embeds[:, 0, :]
-    # normalize the CLS token embeddings
-    normalized = f.normalize(CLSs, p=2, dim=1)
-    # calculate the cosine similarity
-    cls_dist = normalized.matmul(normalized.T)
-    cls_dist = cls_dist.new_ones(cls_dist.shape) - cls_dist
-    cls_dist = cls_dist.numpy()
-    return cls_dist
-def mean_cosine_distance(embeds):
-    MEANS = embeds.mean(dim=1)
-        # normalize the MEANS token embeddings
-    normalized = f.normalize(MEANS, p=2, dim=1)
-    # calculate the cosine similarity
-    mean_dist = normalized.matmul(normalized.T)
-    mean_dist = mean_dist.new_ones(mean_dist.shape) - mean_dist
-    return mean_dist
-def max_cosine_distance(embeds):
-    MAXS, _ = embeds.max(dim=1)
-    # normalize the MEANS token embeddings
-    normalized = f.normalize(MAXS, p=2, dim=1)
-    # calculate the cosine similarity
-    max_dist = normalized.matmul(normalized.T)
-    max_dist = max_dist.new_ones(max_dist.shape) - max_dist
-    return max_dist
+
 if __name__ == "__main__":
     PARSER = argparse.ArgumentParser(description='BERT-GATES')
     PARSER.add_argument("--mode", type=str, default="test", help="mode type: train/test/all")
