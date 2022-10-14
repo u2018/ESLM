@@ -55,3 +55,9 @@ python run_eslm_bert.py --mode test
 ```
 python run_eslm_bert_ens.py --mode test
 ```
+
+Run to evaluate an example result.
+```
+cd evaluator
+bash run.sh
+```
