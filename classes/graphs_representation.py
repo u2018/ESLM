@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 27 09:34:40 2022
 
-@author: asep
-"""
 import numpy as np
 import scipy.sparse as sp
 from config import config

@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 27 15:58:42 2021
 
-@author: asep
-"""
 import os
 from rdflib.plugins.parsers.ntriples import NTriplesParser, Sink
 from classes.helpers import Utils

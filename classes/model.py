@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Dec  9 18:04:58 2020
-"""
+
 
 # Define model
 import numpy as np

@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""\
-Created on Tue Dec 14 11:58:52 2021
-
-@author: asep
-
+"""
 reference from
 [1] https://github.com/nju-websoft/ESBM/tree/master/v1.2
 [2] https://github.com/nju-websoft/DeepLENS/blob/master/code/train_test.py
