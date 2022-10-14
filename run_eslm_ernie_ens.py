@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Feb 23 10:25:40 2022
 
-@author: asep
-"""
 import os
 import argparse
 import time
