@@ -32,6 +32,11 @@ python run_eslm_ernie.py --mode train
 python run_eslm_ernie.py --mode test
 ```
 
+### Run Ensemble Learning on the ESLM model with ERNIE
+
+```
+python run_eslm_ernie_ens.py --mode test
+```
 
 ### Training the ESLM model with BERT
 
@@ -43,4 +48,10 @@ python run_eslm_bert.py --mode train
 
 ```
 python run_eslm_bert.py --mode test
+```
+
+### Run Ensemble Learning on the ESLM model with BERT
+
+```
+python run_eslm_bert_ens.py --mode test
 ```

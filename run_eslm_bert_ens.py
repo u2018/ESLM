@@ -288,7 +288,7 @@ def evaluation(dataset, k):
 if __name__ == "__main__":
     PARSER = argparse.ArgumentParser(description='BERT-GATES')
     PARSER.add_argument("--mode", type=str, default="test", help="mode type: train/test/all")
-    PARSER.add_argument("--best_epoch", type=str, default="True", help="")
+    PARSER.add_argument("--best_epoch", type=str, default="False", help="")
     ARGS = PARSER.parse_args()
     main(ARGS.mode, ARGS.best_epoch)
     
