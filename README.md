@@ -26,8 +26,21 @@ https://github.com/u2018/ESLM.git
 python run_eslm_ernie.py --mode train
 ```
 
+### Testing the ESLM model with ERNIE
+
+```
+python run_eslm_ernie.py --mode test
+```
+
+
 ### Training the ESLM model with BERT
 
 ```
 python run_eslm_bert.py --mode train
+```
+
+### Testing the ESLM model with BERT
+
+```
+python run_eslm_bert.py --mode test
 ```
